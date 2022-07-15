@@ -1,13 +1,21 @@
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * main - check the code for Holberton School students.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0.
  */
-int _putchar(char c)
+int main(void)
 {
-	return (write(1, &c, 1));
+    print_number(98);
+    _putchar('\n');
+    print_number(402);
+    _putchar('\n');
+    print_number(1024);
+    _putchar('\n');
+    print_number(0);
+    _putchar('\n');
+    print_number(-98);
+    _putchar('\n');
+    return (0);
 }
